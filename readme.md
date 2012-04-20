@@ -1,0 +1,1 @@
+demonstrating a bug (?) in require-cs

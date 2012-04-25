@@ -16,7 +16,6 @@ define('cs',{
     pluginBuilder: 'csBuild',
     load: function () {
         throw new Error('Cannot dynamically load CoffeeScript');
-        //console.log('Cannot dynamically load CoffeeScript ... ignoring');
     }
 });
 
@@ -50,9 +49,10 @@ define('app/test2',[], function() {
 
 }).call(this);
 
-define('app/run',[ "cs!app/main" ],
+require([ "cs!app/main" ],
     function(main) {
         console.log("run.js");
         main.init();
     }
 );
+define("app/run", function(){});

@@ -15,5 +15,6 @@ define({
     pluginBuilder: 'csBuild',
     load: function () {
         throw new Error('Cannot dynamically load CoffeeScript');
+        //console.log('Cannot dynamically load CoffeeScript ... ignoring');
     }
 });
